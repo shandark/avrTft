@@ -75,6 +75,7 @@ TARGET = main
 
 # Object files directory
 OBJDIR = obj
+EXTOBJDIR = obj/tft
 
 
 # List C source files here. (C dependencies are automatically generated.)
@@ -593,6 +594,7 @@ clean_list :
 
 # Create object files directory
 $(shell mkdir $(OBJDIR) 2>/dev/null)
+$(shell mkdir $(EXTOBJDIR) 2>/dev/null)
 
 
 # Include the dependency files.
