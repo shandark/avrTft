@@ -20,5 +20,7 @@ void clearScreen( uint16_t col );
 
 void initDisplay( void );
 
+void setPxl( uint8_t x, uint8_t y, uint16_t col );
+
 
 #endif

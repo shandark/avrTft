@@ -31,5 +31,7 @@ extern void initDisplay( void );
  */
 extern void clearScreen( uint16_t col );
 
+extern void setPxl( uint8_t x, uint8_t y, uint16_t col );
+
 
 #endif
