@@ -96,46 +96,6 @@ void initDisplay( void )
     
     sendCommandSPI(SET_PIXEL_FORMAT);
     sendDataSPI(0x05); // ILI9163 doc page 143 - 16 bits per pixel
-    
-        sendCommandSPI(SET_GAMMA_CURVE);
-    sendDataSPI(0x04); // Select gamma curve 3
-    
-    sendCommandSPI(GAM_R_SEL);
-    sendDataSPI(0x01); // Gamma adjustment enabled
-    
-    sendCommandSPI(POSITIVE_GAMMA_CORRECT);
-    sendDataSPI(0x3f); // 1st Parameter
-    sendDataSPI(0x25); // 2nd Parameter
-    sendDataSPI(0x1c); // 3rd Parameter
-    sendDataSPI(0x1e); // 4th Parameter
-    sendDataSPI(0x20); // 5th Parameter
-    sendDataSPI(0x12); // 6th Parameter
-    sendDataSPI(0x2a); // 7th Parameter
-    sendDataSPI(0x90); // 8th Parameter
-    sendDataSPI(0x24); // 9th Parameter
-    sendDataSPI(0x11); // 10th Parameter
-    sendDataSPI(0x00); // 11th Parameter
-    sendDataSPI(0x00); // 12th Parameter
-    sendDataSPI(0x00); // 13th Parameter
-    sendDataSPI(0x00); // 14th Parameter
-    sendDataSPI(0x00); // 15th Parameter
-     
-    sendCommandSPI(NEGATIVE_GAMMA_CORRECT);
-    sendDataSPI(0x20); // 1st Parameter
-    sendDataSPI(0x20); // 2nd Parameter
-    sendDataSPI(0x20); // 3rd Parameter
-    sendDataSPI(0x20); // 4th Parameter
-    sendDataSPI(0x05); // 5th Parameter
-    sendDataSPI(0x00); // 6th Parameter
-    sendDataSPI(0x15); // 7th Parameter
-    sendDataSPI(0xa7); // 8th Parameter
-    sendDataSPI(0x3d); // 9th Parameter
-    sendDataSPI(0x18); // 10th Parameter
-    sendDataSPI(0x25); // 11th Parameter
-    sendDataSPI(0x2a); // 12th Parameter
-    sendDataSPI(0x2b); // 13th Parameter
-    sendDataSPI(0x2b); // 14th Parameter
-    sendDataSPI(0x3a); // 15th Parameter
 
     // Doc page 145
     sendCommandSPI(FRAME_RATE_CONTROL1);
